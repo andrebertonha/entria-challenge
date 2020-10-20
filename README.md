@@ -4,5 +4,7 @@
     + depois dos passos node.js execute: docker exec -it redis13 redis-cli
 
     # Node.js
-    + npm init -y
-    + npm install redis --save
+    + npm install
+
+    
+    
