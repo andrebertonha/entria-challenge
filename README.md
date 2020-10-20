@@ -5,6 +5,6 @@
 
     # Node.js
     + npm install
+    + to execute the project do node app.js in the project folder in some terminal 
 
-    
     

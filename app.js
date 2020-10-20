@@ -27,3 +27,19 @@ client.sadd(['tags', 'angularjs', 'angularjs', 'backbonejs', 'emberjs'], functio
 client.smembers('tags', function(err, reply){
     console.log(reply);
 });
+
+client.set('total', '1800');
+client.expire('total', 10);
+
+client.rpush(['frameworks', 'angular', 'react', 'vue'], function(err, reply){
+    console.log(reply);
+});
+
+client.del('frameworks', function(err, reply){
+    console.log(reply);
+});
+
+client.smembers('tags', function(err, reply){
+    console.log(reply);
+});
+
