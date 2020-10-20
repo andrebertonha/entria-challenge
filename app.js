@@ -19,3 +19,11 @@ console.log(reply);
 client.lrange('frameworks', 0, -1, function(err, reply){
     console.log(reply);
 });
+
+client.sadd(['tags', 'angularjs', 'angularjs', 'backbonejs', 'emberjs'], function(err, reply){
+    console.log(reply);
+});
+
+client.smembers('tags', function(err, reply){
+    console.log(reply);
+});
